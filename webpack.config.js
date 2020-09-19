@@ -14,7 +14,6 @@ const IMG_DIR = path.resolve(__dirname, "assets/src/img");
 const DIST_DIR = path.resolve(__dirname, "assets/dist");
 const entry = {
   main: JS_DIR + "/main.js",
-  single: JS_DIR + "/single.js",
 };
 const output = {
   path: DIST_DIR,

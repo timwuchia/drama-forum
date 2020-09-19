@@ -86,88 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./assets/src/img/dog.jpg":
-/*!********************************!*\
-  !*** ./assets/src/img/dog.jpg ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("assets/assets/src/img/dog.jpg");
-
-/***/ }),
-
-/***/ "./assets/src/js/clock/index.js":
-/*!**************************************!*\
-  !*** ./assets/src/js/clock/index.js ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-(function ($) {
-  var Clock = /*#__PURE__*/function () {
-    function Clock() {
-      _classCallCheck(this, Clock);
-
-      this.initializeClock();
-    }
-
-    _createClass(Clock, [{
-      key: "initializeClock",
-      value: function initializeClock() {
-        var _this = this;
-
-        var t = setInterval(function () {
-          return _this.time();
-        }, 1000);
-      }
-    }, {
-      key: "numPad",
-      value: function numPad(str) {
-        var cStr = str.toString();
-        if (cStr.length < 2) str = 0 + cStr;
-        return str;
-      }
-    }, {
-      key: "time",
-      value: function time() {
-        var currDate = new Date();
-        var currSec = currDate.getSeconds();
-        var currMin = currDate.getMinutes();
-        var curr24Hr = currDate.getHours();
-        var ampm = curr24Hr >= 12 ? "pm" : "am";
-        var currHr = curr24Hr % 12;
-        currHr = currHr ? currHr : 12;
-        var stringTime = currHr + ":" + this.numPad(currMin) + ":" + this.numPad(currSec);
-        var timeEmojiEl = $("#time-emoji");
-
-        if (curr24Hr >= 5 && curr24Hr <= 17) {
-          timeEmojiEl.text("🌞");
-        } else {
-          timeEmojiEl.text("🌜");
-        }
-
-        $("#time").text(stringTime);
-        $("#ampm").text(ampm);
-      }
-    }]);
-
-    return Clock;
-  }();
-
-  new Clock();
-})(jQuery);
-
-/***/ }),
-
 /***/ "./assets/src/js/main.js":
 /*!*******************************!*\
   !*** ./assets/src/js/main.js ***!
@@ -177,15 +95,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _clock__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./clock */ "./assets/src/js/clock/index.js");
-/* harmony import */ var _clock__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_clock__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _sass_styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sass/styles.scss */ "./assets/src/sass/styles.scss");
-/* harmony import */ var _sass_styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sass_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _img_dog_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/dog.jpg */ "./assets/src/img/dog.jpg");
- //styles
-
- // Images
-
+/* harmony import */ var _sass_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/styles.scss */ "./assets/src/sass/styles.scss");
+/* harmony import */ var _sass_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sass_styles_scss__WEBPACK_IMPORTED_MODULE_0__);
+// javascript
+//styles
 
 
 /***/ }),

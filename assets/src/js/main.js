@@ -1,7 +1,4 @@
-import "./clock";
+// javascript
 
 //styles
 import "../sass/styles.scss";
-
-// Images
-import "../img/dog.jpg";
