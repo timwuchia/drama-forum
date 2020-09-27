@@ -2,6 +2,7 @@
 /**
  * Webpack configuration.
  */
+const webpack = require("webpack");
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
@@ -41,6 +42,18 @@ const rules = [
     test: /\.scss$/,
     exclude: /node_modules/,
     use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+  },
+  {
+    test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
+    use: [
+      {
+        loader: "file-loader",
+        options: {
+          name: "[name].[ext]",
+          outputPath: "fonts",
+        },
+      },
+    ],
   },
   {
     test: /\.(png|jpg|svg|jpeg|gif|ico)$/,

@@ -26,34 +26,25 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'drama_forum' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+		<div class='d-flex justify-content-between align-items-center px-3 py-3'>
+			<div class="site-branding">
+				<?php if(get_field('logo', 'options')) : ?>
+				<a href="/">
 				<?php
-			else :
+				$logo = get_field('logo', 'options');
+				echo wp_get_attachment_image($logo['id'], 'full');
 				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$drama_forum_description = get_bloginfo( 'description', 'display' );
-			if ( $drama_forum_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $drama_forum_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'drama_forum' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
+				</a>
+				<?php endif; ?>
+			</div><!-- .site-branding -->
+				
+			<div class='d-flex align-items-center header-right'>
+				<div class='header-search'>
+				<form class='mr-3' action="/" id="header-search-form" method="get"><input type="text" name="s" id="s" placeholder="Search"><button type="submit"><i class="fas fa-search"></i></button></form>
+				</div>
+				<div class='header-account'>
+					<a href="/members/me/"><i class="far fa-user"></i></a>
+				</div>
+			</div>
+		</div>
 	</header><!-- #masthead -->

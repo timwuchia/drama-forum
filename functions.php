@@ -179,3 +179,18 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// add options page
+if( function_exists('acf_add_options_page') ) {
+	
+	if( function_exists('acf_add_options_page') ) {
+	
+		acf_add_options_page(array(
+			'page_title' 	=> 'General Options',
+			'menu_title'	=> 'General Options',
+			'menu_slug' 	=> 'general-options',
+			'position'		=> 10,
+			'capability'	=> 'edit_posts',
+			'icon_url'      => 'dashicons-megaphone',
+		));
+	}
+}

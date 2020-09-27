@@ -11,20 +11,8 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'drama_forum' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'drama_forum' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'drama_forum' ), 'drama_forum', '<a href="http://underscores.me/">Anthony and Tim</a>' );
-				?>
-		</div><!-- .site-info -->
+	<footer id="colophon" class="site-footer p-3 bg-dark-gray">
+		<p class='text-center text-white mb-0'>&copy; <?php echo date("Y") ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> All Rights Reserved</p>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
