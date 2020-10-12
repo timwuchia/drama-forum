@@ -194,3 +194,21 @@ if( function_exists('acf_add_options_page') ) {
 		));
 	}
 }
+
+// remove social network
+function my_custom_account_fields( $fields ){
+    $remove_fields = array('facebook', 'gtalk', 'aim', 'msn', 'twitter', 'yahoo', 'icq', 'skype');
+    if( !empty($fields) ){
+        foreach( $fields as $r => $rows ){
+            foreach( $rows as $c => $cols ){
+                foreach( $cols as $f => $field ){
+                    if( wpfval($field, 'name') && in_array($field['name'], $remove_fields) ){
+                        unset($fields[$r][$c][$f]);
+                    }
+                }
+            }
+        }
+    }
+    return $fields;
+}
+add_filter( 'wpforo_get_account_fields', 'my_custom_account_fields');
