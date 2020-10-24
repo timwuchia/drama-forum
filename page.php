@@ -16,7 +16,7 @@ get_header();
 ?>
 	<div class='container py-5'>
 		<div class='row'>
-			<main id="primary" class="site-main col-lg-8">
+			<main id="primary" class="site-main col-lg-9">
 
 			
 
@@ -35,7 +35,7 @@ get_header();
 				?>
 
 			</main><!-- #main -->
-			<div class='page-sidebar col-lg-4'>
+			<div class='page-sidebar col-lg-3'>
 			<?php
 			get_sidebar();
 			?>
