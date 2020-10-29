@@ -26,7 +26,13 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'drama_forum' ); ?></a>
 
 	<header id="masthead" class="site-header">
+		
 		<div class='d-flex justify-content-between align-items-center px-3 py-3'>
+			<button class="hamburger hamburger--minus d-lg-none" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
 			<div class="site-branding">
 				<?php if(get_field('logo', 'options')) : ?>
 				<a href="/">
@@ -39,11 +45,37 @@
 			</div><!-- .site-branding -->
 				
 			<div class='d-flex align-items-center header-right'>
-				<div class='header-search'>
+				<div class='main-navigation'>
+					<?php
+						wp_nav_menu(
+							array(
+								'menu'  		  => 'main-menu',
+								'depth'           => 3, // 1 = no dropdowns, 2 = with dropdowns.
+								'container'       => 'div',
+								'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+								'walker'          => new WP_Bootstrap_Navwalker(),
+							)
+						);
+					?>
+				</div>
+				<div class='header-search d-none d-lg-block'>
 				<form class='mr-3' action="/" id="header-search-form" method="get"><input type="text" name="s" id="s" placeholder="Search"><button type="submit"><i class="fas fa-search"></i></button></form>
 				</div>
 				<div class='header-account'>
-					<a href="/members/me/"><i class="far fa-user"></i></a>
+					<a class='profile-toggle' href="#"><i class="far fa-user"></i></a>
+					<div class='user-navigation'>
+						<?php
+							wp_nav_menu(
+								array(
+									'menu'  		  => 'user-menu',
+									'depth'           => 3, // 1 = no dropdowns, 2 = with dropdowns.
+									'container'       => 'div',
+									'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+									'walker'          => new WP_Bootstrap_Navwalker(),
+								)
+							);
+						?>
+					</div>
 				</div>
 			</div>
 		</div>

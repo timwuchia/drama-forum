@@ -86,6 +86,38 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./assets/src/js/header.js":
+/*!*********************************!*\
+  !*** ./assets/src/js/header.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+document.addEventListener('DOMContentLoaded', function () {
+  var hamburger = document.querySelector('header .hamburger');
+  var mainNav = document.querySelector('header .main-navigation');
+
+  function toggleMenu() {
+    console.log('toggled');
+    this.classList.toggle('is-active');
+    mainNav.classList.toggle('show');
+  }
+
+  hamburger.addEventListener('click', toggleMenu);
+  var userProfileBtn = document.querySelector('header .profile-toggle');
+  var userNav = document.querySelector('header .user-navigation');
+
+  function toggleProfile() {
+    console.log('toggled');
+    this.classList.toggle('is-active');
+    userNav.classList.toggle('show');
+  }
+
+  userProfileBtn.addEventListener('click', toggleProfile);
+});
+
+/***/ }),
+
 /***/ "./assets/src/js/main.js":
 /*!*******************************!*\
   !*** ./assets/src/js/main.js ***!
@@ -103,6 +135,8 @@ __webpack_require__.r(__webpack_exports__);
  //styles
 
 
+
+__webpack_require__(/*! ./header.js */ "./assets/src/js/header.js");
 
 /***/ }),
 

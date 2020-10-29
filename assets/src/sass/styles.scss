@@ -49,6 +49,18 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/print";
 
+// ---- Hamburger
+$hamburger-padding-x: 0;
+$hamburger-padding-y: 0;
+$hamburger-layer-width: 25px;
+$hamburger-layer-height: 2px;
+$hamburger-layer-spacing: 6px;
+$hamburger-layer-color: theme-color("white");
+$hamburger-layer-border-radius: 0px;
+$hamburger-hover-opacity: 0.7;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity;
+@import "~hamburgers/_sass/hamburgers/hamburgers";
+
 @import "./init";
 @import "components/header";
 @import "components/footer";

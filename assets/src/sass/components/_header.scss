@@ -1,4 +1,12 @@
+$header-height: 59px;
+.page-container {
+  padding-top: calc(#{$header-height} + 4.5rem);
+  padding-bottom: 4.5rem;
+}
 #masthead {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
   background-color: theme-color("dark-gray");
   .site-branding {
     max-width: 100px;
@@ -7,7 +15,46 @@
       height: auto;
     }
   }
+  .hamburger {
+    outline: none;
+  }
   .header-right {
+    .main-navigation {
+      ul#menu-main-menu {
+        list-style: none;
+        padding-left: 0;
+      }
+      @include media-breakpoint-down(md) {
+        background-color: #f7f7f7;
+        z-index: 99;
+        $main_nav_width: 200px;
+        width: $main_nav_width;
+        position: fixed;
+        left: -$main_nav_width;
+        top: $header-height;
+        height: 100%;
+        transition: all 0.3s linear;
+        -webkit-box-shadow: 1px 0px 5px 0px rgba(138, 138, 138, 0.7);
+        -moz-box-shadow: 1px 0px 5px 0px rgba(138, 138, 138, 0.7);
+        box-shadow: 1px 0px 5px 0px rgba(138, 138, 138, 0.7);
+        ul#menu-main-menu {
+          > li.nav-item {
+            border-bottom: 1px solid theme-color("primary");
+          }
+        }
+        &.show {
+          left: 0;
+        }
+      }
+      @include media-breakpoint-up(lg) {
+        display: block;
+        ul#menu-main-menu {
+          display: flex;
+          align-items: center;
+          margin-bottom: 0;
+        }
+      }
+    }
     .header-search {
       form {
         display: flex;
@@ -30,6 +77,30 @@
       }
     }
     .header-account {
+      .user-navigation {
+        background-color: #f7f7f7;
+        z-index: 99;
+        $main_nav_width: 200px;
+        width: $main_nav_width;
+        position: fixed;
+        left: -$main_nav_width;
+        top: $header-height;
+        height: 100%;
+        transition: all 0.3s linear;
+        -webkit-box-shadow: 1px 0px 5px 0px rgba(138, 138, 138, 0.7);
+        -moz-box-shadow: 1px 0px 5px 0px rgba(138, 138, 138, 0.7);
+        box-shadow: 1px 0px 5px 0px rgba(138, 138, 138, 0.7);
+        ul#menu-user-menu {
+          list-style: none;
+          padding-left: 0;
+          > li.nav-item {
+            border-bottom: 1px solid theme-color("primary");
+          }
+        }
+        &.show {
+          left: 0;
+        }
+      }
       svg {
         color: #fff;
       }

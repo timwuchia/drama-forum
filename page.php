@@ -14,11 +14,13 @@
 
 get_header();
 ?>
-	<div class='container py-5'>
+	<div class='container page-container'>
+		<div class='page-mobile-sidebar d-lg-none'>
+			<?php dynamic_sidebar('mobile-sidebar'); ?>
+		</div>
 		<div class='row'>
-			<main id="primary" class="site-main col-lg-9">
-
 			
+			<main id="primary" class="site-main col-lg-9">
 
 				<?php
 				while ( have_posts() ) :
@@ -37,6 +39,7 @@ get_header();
 			</main><!-- #main -->
 			<div class='page-sidebar col-lg-3'>
 			<?php
+			
 			get_sidebar();
 			?>
 			</div>

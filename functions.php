@@ -195,20 +195,16 @@ if( function_exists('acf_add_options_page') ) {
 	}
 }
 
-// remove social network
-function my_custom_account_fields( $fields ){
-    $remove_fields = array('facebook', 'gtalk', 'aim', 'msn', 'twitter', 'yahoo', 'icq', 'skype');
-    if( !empty($fields) ){
-        foreach( $fields as $r => $rows ){
-            foreach( $rows as $c => $cols ){
-                foreach( $cols as $f => $field ){
-                    if( wpfval($field, 'name') && in_array($field['name'], $remove_fields) ){
-                        unset($fields[$r][$c][$f]);
-                    }
-                }
-            }
-        }
-    }
-    return $fields;
+// Register Custom Navigation Walker
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+
+// register mobile sidebar
+add_action('widgets_init', 'mobile_sidebar');
+function mobile_sidebar(){
+	$args = array(
+		'name'          => 'Mobile Sidebar',
+		'id'            => 'mobile-sidebar',
+		'description'   => 'The Awesome Sidebar is shown on the left hand side of blog pages in this theme',
+	);
+	register_sidebar( $args );
 }
-add_filter( 'wpforo_get_account_fields', 'my_custom_account_fields');
