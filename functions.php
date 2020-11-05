@@ -217,7 +217,7 @@ add_action('wp_print_scripts', function () {
 
 // enqueue recaptcha scripts
 add_action('wp_print_scripts', function () {
-	if(is_page('contact')){
+	if(is_page('contact-us')){
 		wp_enqueue_script( 'google-recaptcha' );
 		wp_enqueue_script( 'wpcf7-recaptcha' );
 	}
