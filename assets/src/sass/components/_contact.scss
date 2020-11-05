@@ -1,0 +1,15 @@
+.wpcf7 {
+  form {
+    label {
+      clip: rect(1px, 1px, 1px, 1px);
+      position: absolute;
+      overflow: hidden;
+      display: inline-block !important;
+    }
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+    }
+  }
+}
