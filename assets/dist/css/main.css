@@ -12901,8 +12901,12 @@ a.text-white:hover, a.text-white:focus {
   position: absolute;
   left: -999999999px; }
 
+a,
+svg {
+  transition: all linear 0.4s; }
+
 .page-container {
-  padding-top: calc(59px + 4.5rem);
+  padding-top: calc(72px + 4.5rem);
   padding-bottom: 4.5rem; }
 
 #masthead {
@@ -12922,19 +12926,23 @@ a.text-white:hover, a.text-white:focus {
     padding-left: 0; }
   @media (max-width: 991.98px) {
     #masthead .header-right .main-navigation {
-      background-color: #f7f7f7;
+      background-color: #fff;
       z-index: 99;
-      width: 200px;
+      width: 250px;
       position: fixed;
-      left: -200px;
-      top: 59px;
+      left: -250px;
+      top: 72px;
       height: 100%;
       transition: all 0.3s linear;
       -webkit-box-shadow: 1px 0px 5px 0px rgba(138, 138, 138, 0.7);
       -moz-box-shadow: 1px 0px 5px 0px rgba(138, 138, 138, 0.7);
       box-shadow: 1px 0px 5px 0px rgba(138, 138, 138, 0.7); }
       #masthead .header-right .main-navigation ul#menu-main-menu > li.nav-item {
-        border-bottom: 1px solid red; }
+        padding: 0 1rem; }
+        #masthead .header-right .main-navigation ul#menu-main-menu > li.nav-item a {
+          color: #3c3c3c;
+          padding: 1rem 0;
+          border-bottom: 1px solid #f7f7f7; }
       #masthead .header-right .main-navigation.show {
         left: 0; } }
   @media (min-width: 992px) {
@@ -12943,7 +12951,11 @@ a.text-white:hover, a.text-white:focus {
       #masthead .header-right .main-navigation ul#menu-main-menu {
         display: flex;
         align-items: center;
-        margin-bottom: 0; } }
+        margin-bottom: 0; }
+        #masthead .header-right .main-navigation ul#menu-main-menu > li.nav-item a {
+          color: #fff; }
+          #masthead .header-right .main-navigation ul#menu-main-menu > li.nav-item a:hover {
+            color: rgba(255, 255, 255, 0.7); } }
   #masthead .header-right .header-search form {
     display: flex;
     align-items: stretch; }
@@ -12958,23 +12970,35 @@ a.text-white:hover, a.text-white:focus {
       background-color: #727272; }
       #masthead .header-right .header-search form button[type="submit"] svg {
         color: #fff; }
+  #masthead .header-right .header-account > a {
+    color: #fff; }
+    #masthead .header-right .header-account > a:hover {
+      color: rgba(255, 255, 255, 0.7); }
+      #masthead .header-right .header-account > a:hover > svg {
+        color: rgba(255, 255, 255, 0.7); }
   #masthead .header-right .header-account .user-navigation {
-    background-color: #f7f7f7;
+    background-color: #fff;
     z-index: 99;
-    width: 200px;
+    width: 250px;
     position: fixed;
-    left: -200px;
-    top: 59px;
+    left: -250px;
+    top: 72px;
     height: 100%;
     transition: all 0.3s linear;
     -webkit-box-shadow: 1px 0px 5px 0px rgba(138, 138, 138, 0.7);
     -moz-box-shadow: 1px 0px 5px 0px rgba(138, 138, 138, 0.7);
     box-shadow: 1px 0px 5px 0px rgba(138, 138, 138, 0.7); }
+    @media (min-width: 992px) {
+      #masthead .header-right .header-account .user-navigation {
+        top: 73px; } }
     #masthead .header-right .header-account .user-navigation ul#menu-user-menu {
       list-style: none;
-      padding-left: 0; }
-      #masthead .header-right .header-account .user-navigation ul#menu-user-menu > li.nav-item {
-        border-bottom: 1px solid red; }
+      padding-left: 0;
+      padding: 0 1rem; }
+      #masthead .header-right .header-account .user-navigation ul#menu-user-menu > li.nav-item a {
+        color: #3c3c3c;
+        padding: 1rem 0;
+        border-bottom: 1px solid #f7f7f7; }
     #masthead .header-right .header-account .user-navigation.show {
       left: 0; }
   #masthead .header-right .header-account svg {
@@ -12998,12 +13022,12 @@ a.text-white:hover, a.text-white:focus {
 
 .wpcf7 form input[type="submit"] {
   margin-top: 1rem;
-  border: 1px solid red;
+  border: none;
   background-color: red;
   padding: 0.8rem 1.5rem;
   color: #fff; }
   .wpcf7 form input[type="submit"]:hover {
-    background-color: #b30000; }
+    background-color: #e60000; }
 
 
 /*# sourceMappingURL=main.css.map*/

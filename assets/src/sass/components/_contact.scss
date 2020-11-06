@@ -16,12 +16,12 @@
     input[type="submit"] {
       margin-top: 1rem;
       $btn-color: theme-color("primary");
-      border: 1px solid theme-color("primary");
+      border: none;
       background-color: theme-color("primary");
       padding: 0.8rem 1.5rem;
       color: #fff;
       &:hover {
-        background-color: darken($btn-color, 15%);
+        background-color: darken($btn-color, 5%);
       }
     }
   }
