@@ -12997,12 +12997,13 @@ a.text-white:hover, a.text-white:focus {
   padding: 1rem; }
 
 .wpcf7 form input[type="submit"] {
+  margin-top: 1rem;
   border: 1px solid red;
   background-color: red;
   padding: 0.8rem 1.5rem;
   color: #fff; }
   .wpcf7 form input[type="submit"]:hover {
-    background-color: #fe0000; }
+    background-color: #b30000; }
 
 
 /*# sourceMappingURL=main.css.map*/
