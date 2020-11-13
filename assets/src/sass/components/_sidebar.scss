@@ -1,0 +1,22 @@
+.page-sidebar {
+  section {
+    padding: 1rem;
+    box-shadow: $box-shadow;
+    margin-bottom: 1rem;
+  }
+}
+#wpf-widget-profile {
+  .wpf-prof-header {
+    flex-wrap: wrap;
+    .wpf-prof-alerts {
+      cursor: pointer;
+      overflow: hidden;
+      .wpf-bell {
+        display: flex;
+        svg {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

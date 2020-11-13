@@ -1,0 +1,18 @@
+#wpforo #wpforo-wrap .wpforo-profile-account {
+  .wpf-table {
+    .row-0 {
+      .wpf-field-name-occupation {
+        display: none;
+      }
+    }
+    .row-1 {
+      display: none; // hide social media
+    }
+    .row-2 {
+      .wpf-field-name-location,
+      .wpf-field-name-timezone {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.faq {
+  .faq-wrap {
+    box-shadow: $box-shadow;
+    .faq-title {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: #f7f7f7;
+      margin-bottom: 0;
+    }
+    .faq-content {
+      padding: 1rem;
+      //   display: none;
+      height: 0px;
+      transition: all 0.8s ease-in-out;
+      overflow: hidden;
+      &:not(.show) {
+        display: none;
+      }
+      &.show {
+        height: auto;
+      }
+    }
+  }
+}

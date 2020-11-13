@@ -10512,7 +10512,7 @@ button.bg-white:focus {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
 
 .shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
+  box-shadow: 0px 0px 7px 1px rgba(112, 112, 112, 0.5) !important; }
 
 .shadow-lg {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; }
@@ -13028,6 +13028,64 @@ svg {
   color: #fff; }
   .wpcf7 form input[type="submit"]:hover {
     background-color: #d34242; }
+
+#wpforo #wpforo-wrap .wpforo-profile-account .wpf-table .row-0 .wpf-field-name-occupation {
+  display: none; }
+
+#wpforo #wpforo-wrap .wpforo-profile-account .wpf-table .row-1 {
+  display: none; }
+
+#wpforo #wpforo-wrap .wpforo-profile-account .wpf-table .row-2 .wpf-field-name-location,
+#wpforo #wpforo-wrap .wpforo-profile-account .wpf-table .row-2 .wpf-field-name-timezone {
+  display: none; }
+
+.page-sidebar section {
+  padding: 1rem;
+  box-shadow: 0px 0px 7px 1px rgba(112, 112, 112, 0.5);
+  margin-bottom: 1rem; }
+
+#wpf-widget-profile .wpf-prof-header {
+  flex-wrap: wrap; }
+  #wpf-widget-profile .wpf-prof-header .wpf-prof-alerts {
+    cursor: pointer;
+    overflow: hidden; }
+    #wpf-widget-profile .wpf-prof-header .wpf-prof-alerts .wpf-bell {
+      display: flex; }
+      #wpf-widget-profile .wpf-prof-header .wpf-prof-alerts .wpf-bell svg {
+        margin-right: 5px; }
+
+#wpforo #wpforo-wrap .wpf-breadcrumb div {
+  font-size: 14px; }
+
+#wpforo #wpforo-wrap:not(.wpft-post) .wpforo-content > div:not(.wpf-head-bar):not(.wpf-subforum-sep) {
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 7px 1px rgba(112, 112, 112, 0.5); }
+
+#wpforo #wpforo-wrap.wpft-post .wpfl-1 > div:not(.wpforo-post-head) {
+  box-shadow: 0px 0px 7px 1px rgba(112, 112, 112, 0.5); }
+
+#wpforo #wpforo-wrap.wpft-post .wpfl-1 > div:not(.wpforo-post-head):not(.wpf-tools) {
+  margin-bottom: 1rem; }
+
+.faq .faq-wrap {
+  box-shadow: 0px 0px 7px 1px rgba(112, 112, 112, 0.5); }
+  .faq .faq-wrap .faq-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f7f7f7;
+    margin-bottom: 0; }
+  .faq .faq-wrap .faq-content {
+    padding: 1rem;
+    height: 0px;
+    transition: all 0.8s ease-in-out;
+    overflow: hidden; }
+    .faq .faq-wrap .faq-content:not(.show) {
+      display: none; }
+    .faq .faq-wrap .faq-content.show {
+      height: auto; }
 
 
 /*# sourceMappingURL=main.css.map*/

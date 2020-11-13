@@ -5,3 +5,4 @@ import "@fortawesome/fontawesome-free/js/all.js";
 import "../sass/styles.scss";
 
 require('./header.js');
+require('./faq.js');

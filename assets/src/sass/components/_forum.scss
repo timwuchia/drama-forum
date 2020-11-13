@@ -1,0 +1,24 @@
+#wpforo #wpforo-wrap .wpf-breadcrumb div {
+  font-size: $breadcrumb-font-size;
+}
+
+#wpforo #wpforo-wrap:not(.wpft-post) {
+  .wpforo-content {
+    > div:not(.wpf-head-bar):not(.wpf-subforum-sep) {
+      margin-bottom: 1rem;
+      box-shadow: $box-shadow;
+    }
+  }
+}
+
+#wpforo #wpforo-wrap.wpft-post {
+  // topic post page
+  .wpfl-1 {
+    > div:not(.wpforo-post-head) {
+      box-shadow: $box-shadow;
+    }
+    > div:not(.wpforo-post-head):not(.wpf-tools) {
+      margin-bottom: 1rem;
+    }
+  }
+}
