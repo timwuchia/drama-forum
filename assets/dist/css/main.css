@@ -12905,6 +12905,9 @@ a,
 svg {
   transition: all linear 0.4s; }
 
+html {
+  margin-top: 0 !important; }
+
 .entry-header {
   display: none; }
 
