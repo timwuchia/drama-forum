@@ -63,6 +63,7 @@ $hamburger-active-hover-opacity: $hamburger-hover-opacity;
 @import "~hamburgers/_sass/hamburgers/hamburgers";
 
 @import "./init";
+@import "components/general";
 @import "components/header";
 @import "components/footer";
 @import "components/contact";
