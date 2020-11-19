@@ -12912,7 +12912,7 @@ html {
   display: none; }
 
 .page-container {
-  padding: calc(72px + 2rem);
+  padding-top: calc(72px + 2rem);
   padding-bottom: 4.5rem; }
   @media (min-width: 768px) {
     .page-container {

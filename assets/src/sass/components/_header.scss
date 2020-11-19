@@ -2,7 +2,7 @@ $header-height: 72px;
 $header-height-desktop: 73px;
 $mobile-nav-width: 250px;
 .page-container {
-  padding: calc(#{$header-height} + 2rem);
+  padding-top: calc(#{$header-height} + 2rem);
   padding-bottom: 4.5rem;
   @include media-breakpoint-up(md) {
     padding-top: calc(#{$header-height} + 4.5rem);
