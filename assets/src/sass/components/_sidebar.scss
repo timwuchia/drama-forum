@@ -1,4 +1,7 @@
 .page-sidebar {
+  li {
+    list-style: none;
+  }
   section {
     padding: 1rem;
     box-shadow: $box-shadow;

@@ -12912,8 +12912,11 @@ html {
   display: none; }
 
 .page-container {
-  padding-top: calc(72px + 4.5rem);
+  padding: calc(72px + 2rem);
   padding-bottom: 4.5rem; }
+  @media (min-width: 768px) {
+    .page-container {
+      padding-top: calc(72px + 4.5rem); } }
 
 #masthead {
   position: fixed;
@@ -13047,6 +13050,9 @@ html {
 #wpforo #wpforo-wrap .wpforo-profile-account .wpf-table .row-2 .wpf-field-name-location,
 #wpforo #wpforo-wrap .wpforo-profile-account .wpf-table .row-2 .wpf-field-name-timezone {
   display: none; }
+
+.page-sidebar li {
+  list-style: none; }
 
 .page-sidebar section {
   padding: 1rem;
