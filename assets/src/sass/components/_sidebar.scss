@@ -1,11 +1,13 @@
 .page-sidebar {
-  li {
-    list-style: none;
-  }
   section {
     padding: 1rem;
     box-shadow: $box-shadow;
     margin-bottom: 1rem;
+  }
+}
+.page-mobile-sidebar {
+  li {
+    list-style: none;
   }
 }
 #wpf-widget-profile {

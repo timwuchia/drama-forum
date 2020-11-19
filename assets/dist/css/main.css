@@ -13051,13 +13051,13 @@ html {
 #wpforo #wpforo-wrap .wpforo-profile-account .wpf-table .row-2 .wpf-field-name-timezone {
   display: none; }
 
-.page-sidebar li {
-  list-style: none; }
-
 .page-sidebar section {
   padding: 1rem;
   box-shadow: 0px 0px 7px 1px rgba(112, 112, 112, 0.5);
   margin-bottom: 1rem; }
+
+.page-mobile-sidebar li {
+  list-style: none; }
 
 #wpf-widget-profile .wpf-prof-header {
   flex-wrap: wrap; }
