@@ -12,6 +12,9 @@
 }
 
 #wpforo #wpforo-wrap {
+  .wpforo-content .wpforo-feed {
+    display: none; // hide the wpforo feeds (unread post and the ones with rss)
+  }
   padding-top: 0;
   .wpforo-forum-info {
     .wpforo-subforum {

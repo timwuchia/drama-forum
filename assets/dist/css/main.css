@@ -13078,6 +13078,8 @@ html {
 
 #wpforo #wpforo-wrap {
   padding-top: 0; }
+  #wpforo #wpforo-wrap .wpforo-content .wpforo-feed {
+    display: none; }
   #wpforo #wpforo-wrap .wpforo-forum-info .wpforo-subforum {
     display: none; }
   #wpforo #wpforo-wrap .wpf-breadcrumb {
