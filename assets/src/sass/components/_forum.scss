@@ -11,14 +11,28 @@
   }
 }
 
-#wpforo #wpforo-wrap.wpft-post {
-  // topic post page
-  .wpfl-1 {
-    > div:not(.wpforo-post-head) {
-      box-shadow: $box-shadow;
+#wpforo #wpforo-wrap {
+  padding-top: 0;
+  .wpf-breadcrumb {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+  }
+  .wpft-post {
+    // topic post page
+    .wpfl-1 {
+      > div:not(.wpforo-post-head) {
+        box-shadow: $box-shadow;
+      }
+      > div:not(.wpforo-post-head):not(.wpf-tools) {
+        margin-bottom: 1rem;
+      }
     }
-    > div:not(.wpforo-post-head):not(.wpf-tools) {
-      margin-bottom: 1rem;
-    }
+  }
+}
+
+.wpft-recent #wpforo #wpforo-wrap {
+  .wpforo-recent-wrap {
+    padding: 1rem;
   }
 }

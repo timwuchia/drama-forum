@@ -13067,11 +13067,19 @@ html {
   margin-bottom: 1rem;
   box-shadow: 0px 0px 7px 1px rgba(112, 112, 112, 0.5); }
 
-#wpforo #wpforo-wrap.wpft-post .wpfl-1 > div:not(.wpforo-post-head) {
-  box-shadow: 0px 0px 7px 1px rgba(112, 112, 112, 0.5); }
+#wpforo #wpforo-wrap {
+  padding-top: 0; }
+  #wpforo #wpforo-wrap .wpf-breadcrumb {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 2rem; }
+  #wpforo #wpforo-wrap .wpft-post .wpfl-1 > div:not(.wpforo-post-head) {
+    box-shadow: 0px 0px 7px 1px rgba(112, 112, 112, 0.5); }
+  #wpforo #wpforo-wrap .wpft-post .wpfl-1 > div:not(.wpforo-post-head):not(.wpf-tools) {
+    margin-bottom: 1rem; }
 
-#wpforo #wpforo-wrap.wpft-post .wpfl-1 > div:not(.wpforo-post-head):not(.wpf-tools) {
-  margin-bottom: 1rem; }
+.wpft-recent #wpforo #wpforo-wrap .wpforo-recent-wrap {
+  padding: 1rem; }
 
 .faq .faq-wrap {
   box-shadow: 0px 0px 7px 1px rgba(112, 112, 112, 0.5); }
