@@ -13012,6 +13012,9 @@ html {
 
 .site-footer a {
   color: #fff; }
+  .site-footer a:hover {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none; }
 
 .wpcf7 form label {
   clip: rect(1px, 1px, 1px, 1px);

@@ -1,5 +1,9 @@
 .site-footer {
   a {
     color: #fff;
+    &:hover {
+      color: rgba(#fff, 0.7);
+      text-decoration: none;
+    }
   }
 }
