@@ -13069,6 +13069,8 @@ html {
 
 #wpforo #wpforo-wrap {
   padding-top: 0; }
+  #wpforo #wpforo-wrap .wpforo-forum-info .wpforo-subforum {
+    display: none; }
   #wpforo #wpforo-wrap .wpf-breadcrumb {
     margin-top: 0;
     margin-bottom: 0;

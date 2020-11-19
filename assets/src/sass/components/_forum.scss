@@ -13,6 +13,11 @@
 
 #wpforo #wpforo-wrap {
   padding-top: 0;
+  .wpforo-forum-info {
+    .wpforo-subforum {
+      display: none;
+    }
+  }
   .wpf-breadcrumb {
     margin-top: 0;
     margin-bottom: 0;
