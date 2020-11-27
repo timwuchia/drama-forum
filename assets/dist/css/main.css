@@ -12912,6 +12912,7 @@ html {
   display: none; }
 
 body:not(.logged-in) #masthead .header-right .header-account > a {
+  padding: 0;
   padding-right: 0.75rem; }
 
 .page-container {
