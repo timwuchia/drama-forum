@@ -1,6 +1,13 @@
 $header-height: 72px;
 $header-height-desktop: 73px;
 $mobile-nav-width: 250px;
+
+body:not(.logged-in) {
+  #masthead .header-right .header-account > a {
+    padding-right: 0.75rem;
+  }
+}
+
 .page-container {
   padding-top: calc(#{$header-height} + 2rem);
   padding-bottom: 4.5rem;
