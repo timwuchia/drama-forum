@@ -4,7 +4,7 @@
 
 #wpforo #wpforo-wrap:not(.wpft-post) {
   .wpforo-content {
-    > div:not(.wpf-head-bar):not(.wpf-subforum-sep) {
+    > div:not(.wpf-head-bar):not(.wpf-subforum-sep):not(.wpf-navi) {
       margin-bottom: 1rem;
       box-shadow: $box-shadow;
     }
