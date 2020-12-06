@@ -52,9 +52,9 @@
 							)
 						);
 					?>
-					<div class='px-3 header-search d-lg-none'>
+					<!-- <div class='px-3 header-search d-lg-none'>
 						<form class='mr-3' action="/" id="header-search-form" method="get"><input type="text" name="s" id="s" placeholder="Search"><button type="submit"><i class="fas fa-search"></i></button></form>
-					</div>
+					</div> -->
 				</div>
 				<!-- <div class='header-search d-none d-lg-block'>
 				<form class='mr-3' action="/" id="header-search-form" method="get"><input type="text" name="s" id="s" placeholder="Search"><button type="submit"><i class="fas fa-search"></i></button></form>
