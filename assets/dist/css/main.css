@@ -12908,6 +12908,9 @@ svg {
 html {
   margin-top: 0 !important; }
 
+#wpforo #wpforo-wrap #wpforo-poweredby {
+  display: none; }
+
 .entry-header {
   display: none; }
 

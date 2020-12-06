@@ -11,3 +11,8 @@ svg {
 html {
   margin-top: 0 !important;
 }
+
+// hide powered by section
+#wpforo #wpforo-wrap #wpforo-poweredby {
+  display: none;
+}
