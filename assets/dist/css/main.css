@@ -13057,7 +13057,6 @@ body:not(.logged-in) #masthead .header-right .header-account > a {
 
 .page-sidebar section {
   padding: 1rem;
-  box-shadow: 0px 0px 7px 1px rgba(112, 112, 112, 0.5);
   margin-bottom: 1rem; }
 
 .page-mobile-sidebar li {
