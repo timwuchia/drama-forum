@@ -56,9 +56,9 @@
 						<form class='mr-3' action="/" id="header-search-form" method="get"><input type="text" name="s" id="s" placeholder="Search"><button type="submit"><i class="fas fa-search"></i></button></form>
 					</div>
 				</div>
-				<div class='header-search d-none d-lg-block'>
+				<!-- <div class='header-search d-none d-lg-block'>
 				<form class='mr-3' action="/" id="header-search-form" method="get"><input type="text" name="s" id="s" placeholder="Search"><button type="submit"><i class="fas fa-search"></i></button></form>
-				</div>
+				</div> -->
 			</div>
 			<div class='header-right d-flex align-items-center'>
 				<div class='header-account d-flex align-items-center'>
