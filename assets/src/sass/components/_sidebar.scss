@@ -12,8 +12,12 @@
 #wpf-widget-profile {
   .wpf-prof-header {
     flex-wrap: wrap;
+    .wpf-prof-info {
+      border-bottom: $border;
+    }
     .wpf-prof-alerts {
       cursor: pointer;
+      border-bottom: $border;
       overflow: hidden;
       .wpf-bell {
         display: flex;
@@ -22,5 +26,8 @@
         }
       }
     }
+  }
+  .wpf-prof-content {
+    border-bottom: $border;
   }
 }

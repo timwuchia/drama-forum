@@ -12911,6 +12911,10 @@ html {
 #wpforo #wpforo-wrap #wpforo-poweredby {
   display: none; }
 
+.page-container #wpforo #wpforo-wrap .wpforo-widget-wrap .wpforo-widget-content li,
+.page-container .wpforo-widget-wrap .wpforo-widget-content li {
+  border-bottom: 1px solid rgba(204, 204, 204, 0.4); }
+
 .entry-header {
   display: none; }
 
@@ -13067,13 +13071,19 @@ body:not(.logged-in) #masthead .header-right .header-account > a {
 
 #wpf-widget-profile .wpf-prof-header {
   flex-wrap: wrap; }
+  #wpf-widget-profile .wpf-prof-header .wpf-prof-info {
+    border-bottom: 1px solid rgba(204, 204, 204, 0.4); }
   #wpf-widget-profile .wpf-prof-header .wpf-prof-alerts {
     cursor: pointer;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.4);
     overflow: hidden; }
     #wpf-widget-profile .wpf-prof-header .wpf-prof-alerts .wpf-bell {
       display: flex; }
       #wpf-widget-profile .wpf-prof-header .wpf-prof-alerts .wpf-bell svg {
         margin-right: 5px; }
+
+#wpf-widget-profile .wpf-prof-content {
+  border-bottom: 1px solid rgba(204, 204, 204, 0.4); }
 
 #wpforo #wpforo-wrap .wpf-breadcrumb div {
   font-size: 14px; }

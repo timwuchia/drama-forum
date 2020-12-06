@@ -16,3 +16,14 @@ html {
 #wpforo #wpforo-wrap #wpforo-poweredby {
   display: none;
 }
+
+// reset widget border bottom style
+.page-container
+  #wpforo
+  #wpforo-wrap
+  .wpforo-widget-wrap
+  .wpforo-widget-content
+  li,
+.page-container .wpforo-widget-wrap .wpforo-widget-content li {
+  border-bottom: $border;
+}

@@ -12,7 +12,7 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "./bootstrap-cutom";
 @import "variables/container";
 @import "variables/typography";
-$box-shadow: 0px 0px 7px 1px rgba(112, 112, 112, 0.5);
+@import "variables/variables";
 
 // bootstrap
 
