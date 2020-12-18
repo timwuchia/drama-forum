@@ -13110,6 +13110,9 @@ body:not(.logged-in) #masthead .header-right .header-account > a {
 .wpft-recent #wpforo #wpforo-wrap .wpforo-recent-wrap {
   padding: 1rem; }
 
+.svg-inline--fa.fa-w-16 {
+  width: unset; }
+
 .faq .faq-wrap {
   box-shadow: 0px 0px 7px 1px rgba(112, 112, 112, 0.5); }
   .faq .faq-wrap .faq-title {
