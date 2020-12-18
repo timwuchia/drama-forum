@@ -13088,7 +13088,7 @@ body:not(.logged-in) #masthead .header-right .header-account > a {
 #wpforo #wpforo-wrap .wpf-breadcrumb div {
   font-size: 14px; }
 
-#wpforo #wpforo-wrap:not(.wpft-post) .wpforo-content > div:not(.wpf-head-bar):not(.wpf-subforum-sep):not(.wpf-navi):not(.wpforo-profile-wrap):not(.wpft-search) {
+#wpforo #wpforo-wrap:not(.wpft-post) .wpforo-content > div:not(.wpf-head-bar):not(.wpf-subforum-sep):not(.wpf-navi):not(.wpforo-profile-wrap):not(.wpft-search):not(.wpft-members) {
   margin-bottom: 1rem;
   box-shadow: 0px 0px 7px 1px rgba(112, 112, 112, 0.5); }
 
